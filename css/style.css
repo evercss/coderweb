@@ -1,0 +1,166 @@
+*{
+    /* esto quita todos los márgenes de la pagina */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    }
+    a {
+        color: #ffc451;
+        text-decoration: none;
+      }
+      
+    a:hover {
+        color: #ffd584;
+        text-decoration: none;
+      }
+    h2 {
+        font-size: 55px;
+        color: #fff
+    }
+
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 999;
+  padding: 10px 0 10px;
+  background-color: #000000b2;
+}
+#menubar {
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    margin-top: 0px;
+    font-size: 19px;
+}
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    border-bottom: 2px solid  #ffbb38;
+}
+@media (max-width: 768px) {
+    #header {
+      background-color: #07006b;
+    }
+  }
+/*--------------------------------------------------------------
+#  BOTON PLATAFORMA
+--------------------------------------------------------------*/
+.plataforma-btn {
+  color: #fff;
+  border-radius: 4px;
+  padding: 7px 25px 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 15px;
+  display: inline-block;
+  border: 2px solid #ffc451;
+}
+.plataforma-btn:hover {
+  background: #ffbb38;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+    .plataforma-btn {
+      padding: 7px 20px 8px 20px;
+      margin-right: 15px;
+    }
+  }
+
+
+/*--------------------------------------------------------------
+#  FIN DEL BOTON PLATAFORMA
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#  slider
+--------------------------------------------------------------*/
+.contenedor2{
+    top: 0;
+    width: auto;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*--------------------------------------------------------------
+#  ultimas noticias
+--------------------------------------------------------------*/
+
+   
+.news-container {
+    position: fixed;
+   /*top: 0;*/
+    left: 0;
+    right: 0;
+    font-family: "Roboto", sans-serif;
+    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.news-container .title {
+    position: absolute;
+    background: #df2020;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    color: white;
+    font-weight: bold;
+    z-index: 997;
+}
+
+.news-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    animation: scroll 25s infinite linear;
+}
+
+.news-container ul li {
+    white-space: nowrap;
+    padding: 10px 24px;
+    color: #494949;
+    position: relative;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.news-container ul li::after {
+    content:"";
+    width: 1px;
+    height: 100%;
+    background: #b8b8b8;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.news-container ul li:last-child::after {
+    display: none;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-1083px);
+
+    }
+}
+.div1{
+    width: 25%;
+}
+.div2{
+    width: 75%;
+}

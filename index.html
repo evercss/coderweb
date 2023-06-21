@@ -1,13 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./img/ico-faviconMYC.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--EL LINK DE BS SIEMPRE ARRIBA DEL CSS PROPIO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Academia Estudios M y C</title>
 </head>
 <body>
-    <h1>Hola</h1>
-    <h2>como estas</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores eius. Fuga eaque officia, ipsam repellendus deserunt consectetur tempore libero possimus voluptates, perspiciatis unde mollitia qui blanditiis, dolorum ad accusantium?</p>
+<!--Encabezado menu logo-->
+  <header id="header" class="fixed-top ">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container d-flex align-items-center justify-content-lg-between">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/Logo-Estudios-MyC-small.png" alt="Estudios M y C" width="240" height="50">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menubar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Cursos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./pages/curso-residentado-medico.html">Residentado Médico</a></li>
+                  <li><a class="dropdown-item" href="#">ENAM</a></li>
+                  <li><a class="dropdown-item" href="#">Internado Médico</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/editorial.html">Editorial</a>
+              </li>
+            </ul>
+            <a href="#" class="plataforma-btn scrollto">PLATAFORMA</a>
+          </div>
+        </div>
+      </nav>
+  </header>
+<!-- FIN del Header -->
+
+<!--Slider-->
+<main class="container-fluid">
+    <section class="contenedor2">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./img/pronto-myc.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Curso Pre Residentado Médico</h2>
+                  <p>Queremos verte de Especialista.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./img/prontomyc.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block txtslider">
+                  <h2>Curso PRE ENAM</h2>
+                  <p>Matrículate en agosto.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/pronto-myc.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h2>Bancos de Preguntas</h2>
+                  <p>Contamos con los mejores libros.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+<!--ultimas noticias - eventos-->
+    <section>
+        <div class="news-container">
+            <div class="title">
+                ATENCIÓN
+            </div>
+    
+            <ul>
+                <li>
+                    Resultados del Simulacro Nacional Pre Residentado Médico 2023
+                </li>
+                
+                <li>
+                    Ranking de notas / Simulacro RM-2023
+                </li>
+    
+                <li>
+                    Descarga las claves del Simulacro
+                </li>
+                <li>
+                    Solo este fin de semana oferta en Bancos de Preguntas
+                </li>
+            </ul>
+        </div>
+    </section>
+<!--Venta de Cursos-->
+    <section class="contenedor4">
+        <article class="txtbienvenidos">
+            <h1 class="titulo">Bienvenidos</h1>
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum repellat alias minus consequatur recusandae ab perferendis itaque, enim ipsam dolore quia atque distinctio facilis odio ut vitae voluptate repellendus deserunt?</p>
+        </article>
+        <article class="cursos">
+            <aside class="ventacursos">
+                <div class="contenido-img">
+                    <img src="./img/RESIDENTADO2022_Mesa de trabajo 1.png" alt="Curso Residentado Médico 2023">
+                </div>
+                <div class="contenido-texto">
+                    <h2>Pre Residentado Médico</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus ut magnam, at minima cum incidunt magni ipsa necessitatibus voluptatibus inventore quibusdam. Aliquam harum iure hic. Iure omnis vitae minima.</p>
+                    <a href="#">VER MÁS</a>
+                </div>
+            </aside>
+            <aside class="ventacursos">
+                <div class="contenido-img">
+                    <img src="./img/RESIDENTADO2022_Mesa de trabajo 1.png" alt="Curso Residentado Médico 2023">
+                </div>
+                <div class="contenido-texto">
+                    <h2>Pre ENAM</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus ut magnam, at minima cum incidunt magni ipsa necessitatibus voluptatibus inventore quibusdam. Aliquam harum iure hic. Iure omnis vitae minima.</p>
+                    <a href="#">VER MÁS</a>
+                </div>
+            </aside>
+            <aside class="ventacursos">
+                <div class="contenido-img">
+                    <img src="./img/RESIDENTADO2022_Mesa de trabajo 1.png" alt="Curso Residentado Médico 2023">
+                </div>
+                <div class="contenido-texto">
+                    <h2>Pre Internado Médico</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellendus ut magnam, at minima cum incidunt magni ipsa necessitatibus voluptatibus inventore quibusdam. Aliquam harum iure hic. Iure omnis vitae minima.</p>
+                    <a href="#">VER MÁS</a>
+                </div>
+            </aside>
+        </article>
+    </section>
+<!--Editorial-->
+    <section class="contenedor5">
+        <aside class="fotolibro">
+            <div class="libro">
+                <img src="./img/BANCO-RM-600.jpg" alt="Banco Residentado Médico 2023">
+            </div>
+            <div>
+                <a href="#">CÓMPRALO AQUÍ</a>
+            </div>
+        </aside>
+        <aside class="fotolibro">
+            <div class="libro">
+                <img src="./img/BANCO-RM-600.jpg" alt="Banco Residentado Médico 2023">
+            </div>
+            <div>
+                <a href="#">CÓMPRALO AQUÍ</a>
+            </div>
+        </aside>
+    </section>
+    <!--FOOTER-->
+    <section class="contenedor6">
+        <hr>
+        <div class="imgtext">
+            <div class="logosmall">
+                <img src="./img/Logo-Estudios-MyC-small.png" alt="Estudios M y C">
+            </div>
+            <div class="textfooter">
+                <h3>Contactenos</h3>
+                <p>Direcciones 1</p>
+                <p>Distrito de linces</p>
+                <p>Horario de atencion</p>
+                <a href="#">info@myc.com</a>
+
+            </div>
+        </div>
+ </main>
+ <footer class="footer">
+    <div class="div1">
+        <a href="index.html"><img src="../img/Logo-Estudios-MyC-small.png" class="logo" alt="Estudios M y C"></a>
+    </div>
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.4412749819535!2d-77.03614452310653!3d-12.08191408815772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8ee65d1d081%3A0xd5370c31073816ec!2sStudies%20M%20and%20C!5e0!3m2!1sen!2spe!4v1684893932567!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+    </div>
+    <div>
+        <h3>
+            Contáctenos
+        </h3>
+        <ul>
+            <li>E-mail: info@mcyc.om</li>
+            <li>Whatsapp: +5198075555</li>
+            <li>Dirección: Av. Petit Thouars 1775</li>
+            <li>Atención: Lunes a viernes de 9am a 6pm</li>
+        </ul>
+    </div>
+
+</footer>
+    <!--EL SCRIPT DE BOOTSTRAP SIEMPRE VA ANTES DE FINALIZAR EL BODY-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
